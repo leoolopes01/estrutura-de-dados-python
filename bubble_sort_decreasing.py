@@ -51,17 +51,10 @@ def test_bubble_sort_decreasing(list, by):
 
     # Defino uma estrutura de repetição que vai do range 0 até o tamanho da lista
     for current in range(0, len(list)):
-        if (by == 'title'):
-            item = list[current].title
-        elif (by == 'price'):
-            item = list[current].price
-        elif (by == 'pages'):
-            item = list[current].pages
-        elif (by == 'author'):
-            item = list[current].author
+        item = list[current]
 
         # Para cada repetição eu vou exibir o titulo, para confirmar que a lista está desordenada
-        print(item)
+        print(f'{item.title}, {item.price}, {item.pages}, {item.author}')
 
     # Chamo a função que organiza minha lista salvando os valores organizados em uma variavel
     test = bubble_sort_decreasing(list, by)
@@ -71,15 +64,7 @@ def test_bubble_sort_decreasing(list, by):
 
     # Defino uma estrutura de repetição que vai do range 0 até o tamanho da lista
     for current in range(0, len(test)):
-        if (by == 'title'):
-            item = test[current].title
-        elif (by == 'price'):
-            item = test[current].price
-        elif (by == 'pages'):
-            item = test[current].pages
-        elif (by == 'author'):
-            item = test[current].author
-
+        item = test[current]
 
         # Para cada repetição eu vou exibir o titulo, para confirmar que a lista está ordenada
-        print(item)
+        print(f'{item.title}, {item.price}, {item.pages}, {item.author}')

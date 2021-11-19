@@ -29,6 +29,7 @@ print("\n============ De acordo com Titulo")
 test_bubble_sort_growing(books, "title")
 print("\n============ De acordo com Nome do autor")
 test_bubble_sort_growing(books, "author")
+
 print("\n================================ LISTA ORDENADA EM ORDEM DECRESCENTE =================================")
 print("\n============ De acordo com Número de páginas")
 test_bubble_sort_decreasing(books, "pages")
@@ -38,8 +39,6 @@ print("\n============ De acordo com Titulo")
 test_bubble_sort_decreasing(books, "title")
 print("\n============ De acordo com Nome do autor")
 test_bubble_sort_decreasing(books, "author")
+
 print("\n============================= INSERINDO LIVROS NA PRATELEIRA ELETRONICA =============================")
 
-newBooks = []
-newBooks.append(book("Dom Quixote", "Miguel de Cervantes", 120, 75))
-newBooks.append(book("Dom Quixote", "Miguel de Cervantes", 120, 75))
