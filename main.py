@@ -1,6 +1,8 @@
 from Books import book
 from bubble_sort_growing import test_bubble_sort_growing
 from bubble_sort_decreasing import test_bubble_sort_decreasing
+from insert_item import insert_item, test_insert_item
+from remove_item import remove_item, test_remove_item
 
 # Iniciando uma lista vazia de livros
 books = []
@@ -41,4 +43,9 @@ print("\n============ De acordo com Nome do autor")
 test_bubble_sort_decreasing(books, "author")
 
 print("\n============================= INSERINDO LIVROS NA PRATELEIRA ELETRONICA =============================")
+insert_item(books)
+test_insert_item(books)
 
+print("\n============================= REMOVENDO LIVROS NA PRATELEIRA ELETRONICA =============================")
+remove_item(books, "A Montanha Mágica")
+test_remove_item(books)
